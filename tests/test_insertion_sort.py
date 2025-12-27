@@ -1,7 +1,6 @@
 import unittest
 from insertion_sort import insertion_sort
 
-
 class TestInsertionSort(unittest.TestCase):
     def test_empty_list(self):
         list = []
@@ -32,7 +31,3 @@ class TestInsertionSort(unittest.TestCase):
         list = [10, 2, 3, 4, 5]
         insertion_sort(list)
         self.assertEqual(list, [2, 3, 4, 5, 10])
-
-
-if __name__ == '__main__':
-    unittest.main()
